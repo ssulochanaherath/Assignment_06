@@ -423,7 +423,30 @@
             background-color: red;
         }
 
+        #logOut {
+            background-color: darkblue;
+        }
+
+        #update {
+            background-color: darkblue;
+            color: white;
+        }
+
+        #delete {
+            background-color: darkblue;
+        }
+
+        #update1 {
+            background-color: darkblue;
+            color: white;
+        }
+
+        #delete1 {
+            background-color: darkblue;
+        }
+
     </style>
+
 </head>
 <body>
 <header>
@@ -431,7 +454,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/Logo.jpeg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
-                <b>Sun Mart</b>
+                <b>Pos System</b>
             </a>
             <ul class="nav nav-underline">
                 <li class="nav-item">
@@ -448,7 +471,7 @@
                 </li>
                 <li class="nav-item">
                     <span class="" id="nav-login">
-                        <button type="button" class="btn btn-danger">Log Out</button>
+                        <button id="logOut" type="button" class="btn btn-danger">Log Out</button>
                     </span>
                 </li>
             </ul>
@@ -532,20 +555,17 @@
     <section id="sidebtn">
         <span class="nav-link" id="nav-btn-customer">
             <div id="div1" class="BtnManage ">
-                <h4>Manage</h4>
                 <h3>Customer</h3>
             </div>
         </span>
         <span class="nav-link" id="nav-btn-store">
             <div id="div2" class="BtnManage bg-opacity-75">
-                <h4>Manage</h4>
                 <h3>Store</h3>
             </div>
         </span>
 
         <span class="nav-link" id="nav-btn-order">
             <div id="div3" class="BtnManage bg-opacity-50">
-                <h4>Manage</h4>
                 <h3>Orders</h3>
             </div>
         </span>
@@ -586,8 +606,8 @@
             </div>
 
             <div class="col-12">
-                <button type="button" class="btn btn-warning">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button id="update" type="button" class="btn btn-warning">Update</button>
+                <button id="delete" type="button" class="btn btn-danger">Delete</button>
             </div>
         </form>
     </div>
@@ -702,8 +722,8 @@
             </div>
 
             <div class="col-12">
-                <button type="button" class="btn btn-warning">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button id="update1" type="button" class="btn btn-warning">Update</button>
+                <button id="delete1" type="button" class="btn btn-danger">Delete</button>
             </div>
         </form>
     </div>
