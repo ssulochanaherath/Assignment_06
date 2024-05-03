@@ -6,32 +6,251 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/normalize.css">
     <style>
+
+        body{
+            position: relative;
+            background: #ffffff;
+        }
+        /*header*/
+        header>nav{
+            border-radius: 40px 40px 40px 40px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        header>nav>div>a>img{
+            border-radius: 50%;
+        }
+
+        /*login*/
+        #login-sec{
+            position: relative;
+            height: 100vh;
+        }
+        #login-sec>#log-form{
+            width: 500px;
+            height: 350px;
+            background: lightgray;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+
+            position: absolute;
+            top: 130px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        #btnSign{
+            position: absolute;
+            background-color: darkblue;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #login-sec>h1{
+            font-size: 250px;
+            font-family: sans-serif;
+            color: gray;
+            position: absolute;
+            top: 300px;
+            left: 140px;
+            margin: auto;
+            opacity: 60%;
+        }
+
+        /*-home-*/
+        body{
+            background: lightgray;
+        }
+        #home-sec>#sidebtn{
+            height: fit-content;
+            position: absolute;
+        }
+
+        .BtnManage{
+            width: 350px;
+            height: 350px;
+            color: white;
+            position: relative;
+            margin-left: -120px;
+        }
+
+        .BtnManage>h3{
+            position: absolute;
+            left: 160px;
+            /*right: 30px;*/
+            top: 10px;
+
+        }
+        #sidebtn>a>#div1{
+            opacity: 1;
+        }
+        #sidebtn>a>#div2{
+            opacity: 75%;
+        }
+        #sidebtn>a>#div3{
+            opacity: 50%;
+        }
+        .BtnManage>h4{
+            position: absolute;
+            left: 32px;
+            /*right: 30px;*/
+            top: 12px;
+
+        }
+        .BtnManage:hover{
+            width: 400px;
+            transition-duration: 3s;
+            margin-left: 0;
+            background-color: blueviolet;
+            color: lightgrey;
+            opacity: 1;
+
+        }
+        #home-sec>h2{
+            text-decoration-style: dashed;
+            position: absolute;
+            top: 550px;
+            right: 30px;
+        }
+        #home-sec>h1{
+            font-size: 250px;
+            font-family: sans-serif;
+            color: gray;
+            position: absolute;
+            top: 300px;
+            left: 140px;
+            margin: auto;
+            opacity: 50%;
+        }
+        .card-body{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        /*-customer-*/
+        #customerSearch{
+            width: 800px;
+            height: 300px;
+            border-radius: 10px;
+            background: whitesmoke;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #newCust{
+            position: absolute;
+            top: 100px;
+            right: 130px;
+            margin: auto;
+        }
+        #custTable{
+            width: 1000px;
+            position: absolute;
+            top: 420px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #cust-form-tittle{
+            position: absolute;
+            left: 20px;
+            font-family: sans-serif;
+        }
+
+        /*Store*/
+        #ItemSearch{
+            width: 800px;
+            height: 300px;
+            border-radius: 10px;
+            background: whitesmoke;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #newItem{
+            position: absolute;
+            top: 100px;
+            right: 130px;
+            margin: auto;
+        }
+        #itemTable{
+            width: 1000px;
+            position: absolute;
+            top: 420px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #item-form-tittle{
+            position: absolute;
+            left: 20px;
+            font-family: sans-serif;
+        }
+
+        /*orders*/
+        #custForm{
+            width: 500px;
+            height: 260px;
+            border-radius: 10px;
+            background: whitesmoke;
+            position: absolute;
+            top: 86px;
+            left: 160px;
+            margin: auto;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #ItemForm{
+            width: 600px;
+            height: 260px;
+            border-radius: 10px;
+            background: whitesmoke;
+            position: absolute;
+            top: 86px;
+            right: 50px;
+            margin: auto;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #totalForm{
+            z-index: 2;
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            top: 314px;
+            right: 50px;
+            margin: auto;
+            padding: 5px;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+        #itemCart{
+            width: 650px;
+            position: absolute;
+            top: 370px;
+            left: 160px;
+
+            margin: auto;
+        }
+        #order-form-tittle{
+            position: absolute;
+            left: 20px;
+            font-family: sans-serif;
+        }
+        #purchase-btn{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        /*----------------------------------*/
         body{
             background: lightgrey;
-        }
-
-        #updateButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #unregisterButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #registerButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #logOutButton {
-            float: right;
-            background-color: black;
-            color: white;
         }
 
         #customerSearch{
@@ -64,30 +283,6 @@
             margin: auto;
         }
 
-        #customerButton {
-            height: 400px;
-            aspect-ratio: 1/1;
-            border-radius: 25px;
-            font-size: 75px;
-            color: white;
-        }
-
-        #itemButton {
-            height: 400px;
-            aspect-ratio: 1/1;
-            border-radius: 25px;
-            font-size: 75px;
-            color: white;
-        }
-
-        #ordersButton {
-            height: 400px;
-            aspect-ratio: 1/1;
-            border-radius: 25px;
-            font-size: 75px;
-            color: white;
-        }
-
         #div1 {
             position: absolute;
             top: 150px;
@@ -107,12 +302,6 @@
             top: 150px;
             left: 1075px;
             margin: auto;
-        }
-
-        #logOutButton {
-            float: right;
-            background-color: black;
-            color: white;
         }
 
         h2{
@@ -149,32 +338,8 @@
             margin: auto;
         }
 
-        body{
+        body {
             background: lightgray;
-        }
-
-        #updateButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #deleteButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #addButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #logOutButton {
-            float: right;
-            background-color: black;
-            color: white;
         }
 
         #ItemSearch{
@@ -208,39 +373,6 @@
             background: lightgray;
         }
 
-        #logOutButton {
-            float: right;
-            background-color: black;
-            color: white;
-        }
-
-        #addButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #deleteButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #updateButton {
-            float: right;
-            background-color: darkblue;
-            color: white;
-        }
-
-        #purchaseButton {
-            float: right;
-            position: absolute;
-            top: 90%;
-            right: 50%;
-            background-color: darkblue;
-            color: white;
-        }
-
         #custForm{
             width: 500px;
             height: 260px;
@@ -252,22 +384,12 @@
             margin: auto;
             padding: 5px;
         }
-        #itemForm{
-            width: 600px;
-            height: 260px;
-            border-radius: 10px;
-            background: whitesmoke;
-            position: absolute;
-            top: 140px;
-            right: 50px;
-            margin: auto;
-            padding: 5px;
-        }
+
         #totalForm{
             width: 450px;
             height: 300px;
             position: absolute;
-            top: 330px;
+            top: 530px;
             right: 50px;
             margin: auto;
             padding: 5px;
@@ -275,11 +397,32 @@
         #itemCart{
             width: 650px;
             position: absolute;
-            top: 420px;
+            top: 480px;
             left: 400px;
 
             margin: auto;
         }
+
+        #ItemForm {
+            position: absolute;
+            top: 140px;
+            left: 500px;
+        }
+
+        /*----------------------*/
+
+        #div1 {
+            background-color: yellow;
+        }
+
+        #div2 {
+            background-color: green;
+        }
+
+        #div3 {
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -288,7 +431,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="assets/images/Logo.jpeg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
-                <b>Pos System</b>
+                <b>Sun Mart</b>
             </a>
             <ul class="nav nav-underline">
                 <li class="nav-item">
@@ -316,11 +459,11 @@
 <!--login-->
 <section id="login-sec">
     <h1>
-        Pos System
+        Sun Mart
     </h1>
     <div id="log-form">
         <form>
-            <h2>Sign In</h2>
+            <h2></h2>
             <br>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">@</span>
@@ -346,9 +489,6 @@
 
 <!--home-sec-->
 <section id="home-sec">
-    <!--<h1>
-        Sun Mart
-    </h1>-->
     <br>
     <br>
     <div class="container text-center">
@@ -411,7 +551,7 @@
         </span>
 
     </section>
-    <h2> Contact Us :</h2>
+    <h2></h2>
 
 </section>
 
@@ -718,7 +858,7 @@
     </div>
 
     <!-------Total Form------->
-    <div id="totalForm"class=" bg-success-subtle border border-primary-subtle rounded-3">
+    <div id="totalForm" class=" bg-success-subtle border border-primary-subtle rounded-3">
         <form class="row g-3 ">
 
             <div class="col-md-6">
