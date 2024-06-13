@@ -14,13 +14,13 @@ header>nav>div>a>img{
 /*login*/
 #login-sec{
     position: relative;
-    background:linear-gradient(rgba(0,0,0,0.6),#ffffff,#4869fa);
+    background-color: lightgrey;
     height: 100vh;
 }
 #login-sec>#log-form{
     width: 500px;
     height: 350px;
-    background: lightgray;
+    background: black;
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
@@ -41,7 +41,7 @@ header>nav>div>a>img{
 #login-sec>h1{
     font-size: 250px;
     font-family: sans-serif;
-    color: gray;
+    color: grey;
     position: absolute;
     top: 300px;
     left: 140px;
@@ -71,7 +71,6 @@ header>nav>div>a>img{
     left: 160px;
     /*right: 30px;*/
     top: 10px;
-
 }
 #sidebtn>a>#div1{
     opacity: 1;
@@ -87,7 +86,6 @@ header>nav>div>a>img{
     left: 32px;
     /*right: 30px;*/
     top: 12px;
-
 }
 .BtnManage:hover{
     width: 400px;
@@ -117,7 +115,12 @@ header>nav>div>a>img{
 .card-body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
+#logOut{
+    background-color: darkblue;
+}
+#customer{
+    background-color: darkblue;
+}
 /*-customer-*/
 #customerSearch{
     width: 800px;
@@ -150,6 +153,30 @@ header>nav>div>a>img{
     position: absolute;
     left: 20px;
     font-family: sans-serif;
+}
+#btnCustUpdate{
+    color: white;
+    background-color: darkblue;
+}
+#btnCustDelete{
+    background-color: darkblue;
+}
+#btn-UpdateItem{
+    color: white;
+    background-color: darkblue;
+}
+#btn-DeleteItem{
+    background-color: darkblue;
+}
+#addItem{
+    background-color: darkblue;
+}
+#btn-purchase{
+    background-color: darkblue;
+}
+#btn-AddItem{
+    color: white;
+    background-color: darkblue;
 }
 
 /*Store*/
